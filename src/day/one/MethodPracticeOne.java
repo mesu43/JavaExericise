@@ -9,8 +9,31 @@ public class MethodPracticeOne {
 		System.out.println(getName("i am from bangladesh"));
 		
 		System.out.println(getEvenNumberlist(16));
+		
+		System.out.println(getAllOddNumberList(20));
 
 	}
+	/**Q number.3
+	 * write a method that take a number input and return the list of
+	 * all odd number from 0 to that given number.
+	 * 
+	 * parameter/input:int number
+	 * returnType/output:Arraylist<integer>
+	 * servingBucket/container:List 
+	 */
+	public static ArrayList<Integer> getAllOddNumberList(int number){
+		ArrayList<Integer>  NumberList = new ArrayList<Integer>(); 
+		
+		for(int i = 0; i<=number; i++){
+			if(i % 2 ==1){
+				
+				NumberList.add(i);	
+			}
+		}
+		return NumberList;
+	}
+	
+	
 	
 	/**Q.number.2
 	 * 
